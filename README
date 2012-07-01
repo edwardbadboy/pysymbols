@@ -1,0 +1,18 @@
+Usage:
+./astSymbol.py aPyFile.py
+./symbolDump.py aPyFile.py
+
+astSymbol.py
+	Experiment ast in Python, and collect names from ast,
+	then find similar names.
+	TODO: add support for finding names in 'visit_import'
+	and other statements.
+
+symbolDump.py
+	Experiment symtable module in Python, find namespaces
+	and symbols in it.
+	Attribute names are not parsed by symtable, so can not
+	find those information in it.
+	This symtable can only lookup names in the current
+	namespace, no support for resolving name in inheritance,
+	global or nested namespaces.
